@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+a:hover{
+    color:#e1e1e1;
+}
+a:active{
+    color: #bebebe;
+}
+/*------------------header--------------------*/
+header{
+    background-color: #242f3d;
+}
+.header__nav__el:last-child
+{
+    margin-left: 40px;
+    color: #76ffea;
+}
+.header__nav__el:last-child:hover
+{
+    color: #6aead6;
+}
+.header__nav__el:last-child:active
+{
+    color: #5ed3c1;
+}
+/*------------------main----------------------*/
+main{
+    background-color: #17212b;
+}
+.section--img{
+    background-color: #0e1621;
+}
+/*----------------footer----------------------*/
+footer{
+    background-color: #0e1621;
+}

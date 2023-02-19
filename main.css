@@ -1,0 +1,92 @@
+*::before,
+*::after,
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.5s;
+}
+*::selection{
+    background: rgba(0, 255, 255, .2)
+}
+a{
+    text-decoration: none;
+    transition: 125ms;
+}
+
+/*------------------header--------------------*/
+header{
+    max-width: 1920px;
+}
+.header__inner
+{
+    display: flex;
+    justify-content: space-around;
+}
+.header__logo{
+    margin: auto 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+.header__right{
+    display: flex;
+}
+#nightModeButton{
+    margin: auto;
+    color: black;
+}
+.header__nav
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.header__nav__el
+{
+    margin-left: 20px;
+    font-size: 24px;
+}
+.header__nav__el:last-child
+{
+    margin-left: 40px;
+}
+/*------------------main----------------------*/
+main{
+    max-width: 1920px;
+    height: auto;
+    padding-bottom: 50px;
+}
+section{
+    padding: 50px 150px 0 50px;
+}
+.section--img{
+    max-width: 1920px;
+    display: flex;
+    margin-top: 50px;
+    padding: 40px 0;
+}
+.section--img__inner{
+    margin: auto;
+}
+.section--img__header{
+    margin-bottom: 23px;
+}
+.section--img__img{
+    max-width: 700px;
+    margin: auto;
+}
+p{
+    margin: 10px 0;
+}
+/*----------------footer----------------------*/
+footer{
+    max-width: 1920px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__header{
+    margin: auto;
+}
