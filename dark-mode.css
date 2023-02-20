@@ -31,6 +31,7 @@ header{
 #nightModeButton__inner:hover
 {
     background-color: #5fffe7;
+    box-shadow: 0 0 8px#5fffe7;
 }
 .header__nav__el:last-child
 {
@@ -40,10 +41,12 @@ header{
 .header__nav__el:last-child:hover
 {
     color: #6aead6;
+    text-shadow: 0 0 8px#a2fff1;
 }
 .header__nav__el:last-child:active
 {
     color: #5ed3c1;
+    text-shadow: 0 0 4px#a2fff1;
 }
 /*------------------main----------------------*/
 main{
