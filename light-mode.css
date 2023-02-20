@@ -18,18 +18,26 @@ a:active{
 header{
     background-color: #f1f1f1;
 }
+#nightModeButton__inner
+{
+    background-color: #4114c5;
+}
+#nightModeButton__inner:hover
+{
+    background-color: #2b0d86;
+}
 .header__nav__el:last-child
 {
     margin-left: 40px;
-    color: #01c5a8;
+    color: #4114c5;
 }
 .header__nav__el:last-child:hover
 {
-    color: #00aa91;
+    color: #3510a1;
 }
 .header__nav__el:last-child:active
 {
-    color: #008b77;
+    color: #270b7a;
 }
 /*------------------main----------------------*/
 main{

@@ -15,6 +15,23 @@ a:active{
 header{
     background-color: #242f3d;
 }
+#nightModeButton
+{
+    background-color: #303f52;
+    border-color: #000000;
+}
+#nightModeButton:hover
+{
+    background-color: #303f52;
+}
+#nightModeButton__inner
+{
+    background-color: #5ed3c1;
+}
+#nightModeButton__inner:hover
+{
+    background-color: #5fffe7;
+}
 .header__nav__el:last-child
 {
     margin-left: 40px;

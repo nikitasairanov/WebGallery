@@ -35,7 +35,20 @@ header{
 }
 #nightModeButton{
     margin: auto;
+    width: 80px;
+    height: 40px;
+    border-style: solid;
+    border-color: #5f5f5f;
+    border-radius: 20px;
+
     color: black;
+    background: #dddddd;
+}
+#nightModeButton__inner
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
 }
 .header__nav
 {
