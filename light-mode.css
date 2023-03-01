@@ -21,6 +21,7 @@ header{
 #nightModeButton__inner
 {
     background-color: #4114c5;
+    margin-left: 55%;
 }
 #nightModeButton__inner:hover
 {
