@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <title>WebGallery</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" id="theme" href="../light-mode.css">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class = "header__inner">
+                <a class = "header__logo" href = "../main/main.html">WebGallery</a>
+                <div class = "header__right">
+                    <button id = "nightModeButton">
+                        <div id = "nightModeButton__inner"></div>
+                    </button>
+                    <nav class = "header__nav">
+                        <a class = "header__nav__el" href = "#">Профиль</a>
+                        <a class = "header__nav__el" href = "#">Настройки</a>
+                        <a class = "header__nav__el" href = "#">Войти</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class = "slider">
+                <div id = "slides">
+                    <img src="img/img-1.png" alt="First" class="slide">
+                    <img src="img/img-2.png" alt="Second" class="slide">
+                    <img src="img/img-3.png" alt="Third" class="slide">
+                    <img src="img/img-4.png" alt="Third" class="slide">
+                    <img src="img/img-5.png" alt="Third" class="slide">
+                </div>
+                <div class = "slider__buttons">
+                    <button class = "slider__button" id="button--left">&lt;</button>
+                    <button class = "slider__button" id="button--right">&gt;</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class = "footer__header">А тут типо подвал</h1>
+        </footer>
+        <script src="../main.js"></script>
+        <script src="slider.js"></script>
+    </body>
+</html>

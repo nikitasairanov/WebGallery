@@ -1,0 +1,32 @@
+.slider{
+    width: 1300px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+#slides
+{
+    width: 9999px;
+    height: 500px;
+    transition: 500ms;
+    position: relative;
+    left: 300px;
+}
+.slide{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 50px;
+}
+.slide:first-child{
+    margin-left: 0;
+}
+.slider__buttons{
+    display: flex;
+}
+.slider__button{
+    width: 82px;
+    height: 82px;
+    margin: auto;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 45px;
+}
