@@ -1,0 +1,17 @@
+.slide{
+    box-shadow: 0 0 20px -10px#5fffe7;
+}
+.slide-current{
+    box-shadow: 0 0 30px -10px#5fffe7;
+}
+.slider__button{
+    background-color: #2f4057;
+}
+.slider__button:hover{
+    background-color: #253447;
+    color:#e1e1e1;
+}
+.slider__button:active{
+    background-color: #212e3f;
+    color: #bebebe;
+}
