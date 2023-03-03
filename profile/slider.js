@@ -14,7 +14,11 @@ buttonLeft.onclick=function(){
     indexPrev = index;
     if (index > 0)
     {
-        wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])+(space+104))+'px';
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])+(space+50))+'px';
+          } else {
+            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])+(space+104))+'px';
+        }
         index--;
     }
     SliderGlow();
@@ -23,7 +27,11 @@ buttonRight.onclick=function(){
     indexPrev = index;
     if (index < slides.length - 1)
     {
-        wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])-(space+104))+'px';
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])-(space+50))+'px';
+          } else {
+            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])-(space+104))+'px';
+        }
         index++;
     }
     SliderGlow();
