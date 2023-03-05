@@ -2,7 +2,7 @@ let themeCurrent = document.querySelector("#profile-theme");
 
 let wrapper = document.getElementById("slides");
 let slides = document.querySelectorAll(".slide");
-let space = parseInt(getComputedStyle(slides[0])['width']);
+let width = parseInt(getComputedStyle(slides[0])['max-width']);
 let index = 0;
 let indexPrev;
 
@@ -12,28 +12,30 @@ let buttonRight = document.querySelector("#button--right");
 slides[0].classList.add("slide-current");
 buttonLeft.onclick=function(){
     indexPrev = index;
+    let step;
     if (index > 0)
     {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])+(space+50))+'px';
-          } else {
-            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])+(space+104))+'px';
-        }
+            step = 50;
+        } 
+        else step = 104;
         index--;
     }
+    wrapper.style.left = -(index*(width+step)-300)+'px';
     SliderGlow();
 }
 buttonRight.onclick=function(){
     indexPrev = index;
+    let step;
     if (index < slides.length - 1)
     {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])-(space+50))+'px';
-          } else {
-            wrapper.style.left = (parseInt(getComputedStyle(wrapper)['left'])-(space+104))+'px';
-        }
+            step = 50;
+        } 
+        else step = 104;
         index++;
     }
+    wrapper.style.left = -(index*(width+step)-300)+'px';
     SliderGlow();
 }
 let SliderGlow = function(){
